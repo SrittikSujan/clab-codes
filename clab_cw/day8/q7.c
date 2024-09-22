@@ -2,7 +2,7 @@
 int main()
 {
 
-    int num, sum, pdt, remndr, safe_no;
+    int num, sum, pdt, remainder, safe_no;
 
     printf("Enter a num:\n");
     scanf("%d", &num);
@@ -12,9 +12,9 @@ int main()
     sum = 0;
     while (num > 0)
     {
-        remndr = num % 10;
+        remainder = num % 10;
         pdt = 1;
-        for (int i = 1; i <= remndr; i++)
+        for (int i = 1; i <= remainder; i++)
         {
             pdt = pdt * i;
         }
