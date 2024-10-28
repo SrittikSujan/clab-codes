@@ -7,7 +7,7 @@ int main()
     printf("Enter Array Size\n");
     scanf("%d", &n);
 
-    int num[n + 1]; // Create space for the new element
+    int num[n + 1]; // Create space
 
     int a, i = 1;
     while (i <= n)
@@ -34,13 +34,12 @@ int main()
 
     else
     {
-        // Shifting elements to the right to make space for the new element
+        // Shifting
         for (int i = n; i > location; i--)
         {
             num[i] = num[i - 1];
         }
 
-        // Inserting the element at the specified location
         num[location] = inserted_element;
 
         printf("The updated array contents are:\n");
