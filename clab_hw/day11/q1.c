@@ -1,6 +1,6 @@
 /*
-WAP to find largest element 
-stored in an array.
+WAP to search an element in 
+an 1-D array.
 */
 
 #include <stdio.h>
@@ -21,21 +21,25 @@ int main() {
         num[i-1]=a;
         i++;
     }
-    
-    int big_no;
-    for (int i = 1; i < n; i++)
+
+    int search_element;
+    printf("Enter the element to be searched\n");
+    scanf("%d", &search_element);
+
+    for (int i = 0; i < n; i++)
     {
-        if (num[i - 1] > num[i])
+        if (search_element == num[i])
         {
-            big_no = num[i];
+            printf("Number found at the location = %d", i + 1);
         }
+
         else
         {
-            big_no = num[i];
+            printf("No. not found!\n");
+            break;
         }
+        
     }
-    
-    printf("The largest element stored in an array is: %d\n", big_no);
 
     return 0;
 }

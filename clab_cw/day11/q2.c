@@ -1,3 +1,9 @@
+/*
+WAP to find out the sum of the 
+N numbers stored in an array 
+of integers. 
+*/
+
 #include <stdio.h>
 
 int main()

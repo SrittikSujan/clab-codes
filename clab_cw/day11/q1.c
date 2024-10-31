@@ -1,3 +1,10 @@
+/* 
+WAP to create an array that 
+can store N integers and 
+display the contents of the 
+array
+*/
+
 #include <stdio.h>
 
 int main() {

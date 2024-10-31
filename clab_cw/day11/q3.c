@@ -1,3 +1,8 @@
+/*
+WAP to find the average of N 
+numbers using arrays.
+*/
+
 #include <stdio.h>
 
 int main() {

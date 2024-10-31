@@ -1,3 +1,8 @@
+/*
+WAP to insert an element in 
+an 1-D array.
+*/
+
 #include <stdio.h>
 
 int main()
@@ -23,30 +28,27 @@ int main()
     scanf("%d", &inserted_element);
 
     int location;
-    printf("Enter the location (0 to %d) at which the element is to be inserted\n", n);
+    printf("Enter the location (1 to %d) at which the element is to be inserted\n", n);
     scanf("%d", &location);
 
-    if (location < 0 || location > n)
+    if (location < 1 || location > n)
     {
         printf("Invalid location!\n");
-        return 1;
+    }
+    return 1;
+
+    // Shifting
+    for (int i = n; i >= location - 1; i--)
+    {
+        num[i] = num[i - 1];
     }
 
-    else
+    num[location - 1] = inserted_element;
+
+    printf("The updated array contents are:\n");
+    for (int i = 0; i <= n; i++)
     {
-        // Shifting
-        for (int i = n; i > location; i--)
-        {
-            num[i] = num[i - 1];
-        }
-
-        num[location] = inserted_element;
-
-        printf("The updated array contents are:\n");
-        for (int i = 0; i <= n; i++)
-        {
-            printf("%d\n", num[i]);
-        }
+        printf("%d\n", num[i]);
     }
 
     return 0;
