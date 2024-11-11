@@ -27,7 +27,7 @@ int main() {
     {
         if (num[i - 1] > num[i])
         {
-            big_no = num[i];
+            big_no = num[i - 1];
         }
         else
         {
