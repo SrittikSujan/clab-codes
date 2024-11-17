@@ -1,3 +1,12 @@
+/*
+WAP for a two 
+dimensional to store and 
+display the elements. 
+(Store temperature of 
+two cities for a week and 
+display it)
+*/
+
 #include <stdio.h>
 
 int main() {
