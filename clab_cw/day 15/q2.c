@@ -1,3 +1,10 @@
+/*
+WAP to find the factorial of a 
+number n by using a 
+suitable user defined 
+function.
+*/
+
 #include <stdio.h>
 
 int fact(int facto)
